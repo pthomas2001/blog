@@ -1,0 +1,55 @@
+/**
+* This project contains the following CSS stylesheets:
+*
+* base.css................Sets the global rules of the website.
+* layout.css..............Sets the Grid layout of main page.
+* components.css..........Sets the properties of components on main page.
+*/
+
+
+/**
+* This file contains:
+*
+* BOX-SIZING
+* box-sizing.............Sets the box-sizing value of the website.
+*
+* GLOBAL VALUES
+* variables..............Main colors and fonts of the website.
+*/
+
+
+
+
+
+/*------------------------------------*\
+  #BOX-SIZING
+\*------------------------------------*/
+
+/**
+* 1) The size of elements contains padding and border.
+*/
+
+
+* { box-sizing: border-box } /* [1] */
+
+
+
+
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --primary-color:             #6200EA 0% 0% no-repeat padding-box;
+  --primary-font-color:        #FFFFFF;
+
+  --secondary-color:           #FFFFFF 0% 0% no-repeat padding-box;
+  --secondary-font-color:      #6200EA;
+
+  --main-container-background: #F4F3F5 0% 0% no-repeat padding-box;
+
+  --post-header-font-color:    #B2ACBA;
+
+  --sidebar-footer-font-color: #B2ACBA;
+}
