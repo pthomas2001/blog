@@ -8,13 +8,14 @@
 
 
 /**
-* This file contains:
+* This style sheet contains:
 *
 * BOX-SIZING
 * box-sizing.............Sets the box-sizing value of the website.
 *
 * GLOBAL VALUES
-* variables..............Main colors and fonts of the website.
+* background-colors......Sets the background-color of the components with variables.
+* fonts..................Sets the properties of fonts with variables and @mixin.
 */
 
 
@@ -37,19 +38,41 @@
 
 
 /*------------------------------------*\
-  #VARIABLES
+  #BACKGROUND-COLORS
 \*------------------------------------*/
 
+/**
+* 1) Background color of page header and sidebar headers.
+* 2) Background color of smaller containers.
+*/
+
 :root {
-  --primary-color:             #6200EA 0% 0% no-repeat padding-box;
-  --primary-font-color:        #FFFFFF;
-
-  --secondary-color:           #FFFFFF 0% 0% no-repeat padding-box;
-  --secondary-font-color:      #6200EA;
-
+  --primary-color:             #6200EA 0% 0% no-repeat padding-box; /* [1] */
+  --secondary-color:           #FFFFFF 0% 0% no-repeat padding-box; /* [2] */
   --main-container-background: #F4F3F5 0% 0% no-repeat padding-box;
+}
 
+
+
+
+
+/*------------------------------------*\
+  #FONT-COLORS
+\*------------------------------------*/
+
+/**
+* 1) Font color of page header and sidebar headers.
+* 2) Font color of category headings. (Set in components.css)
+*/
+
+:root {
+  --primary-font-color:        #FFFFFF; /* [1] */
+  --secondary-font-color:      #6200EA; /* [2] */
+  --paragraph-color:           #211138;
   --post-header-font-color:    #B2ACBA;
-
   --sidebar-footer-font-color: #B2ACBA;
+}
+
+html {
+  font: normal normal normal initial/initial 'Montserrat', sans-serif;
 }
