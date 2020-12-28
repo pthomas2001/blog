@@ -4,14 +4,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Font Awesome icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!-- external font-family -->
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="components.css">
 </head>
+
+
+
 <body>
   
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="subscribe">
+      <a class="subscribe__btn" href="#">Subscribe</a>
+    </div>
+    
+    <div class="logo">
+      <i class="logo__icon fa fa-picture-o" aria-hidden="true"></i>
+      <h1 class="logo__text">LOGO TEXT</h1>
+    </div>
+
+  </header>
+
+
+  <!-- NAVBAR -->
+  <div class="navbar-container">
+
+    <nav class="navbar">
+      <a class="navbar__item navbar__item--active" href="#">BUSINESS</a>
+      <a class="navbar__item" href="#">CULTURE</a>
+      <a class="navbar__item" href="#">DESIGN</a>
+      <a class="navbar__item" href="#">HEALTH</a>
+      <a class="navbar__item" href="#">POLITICS</a>
+      <a class="navbar__item" href="#">SCIENCE</a>
+      <a class="navbar__item" href="#">TRAVEL</a>
+      <a class="navbar__item" href="#">WORLD</a>
+    </nav>
+
+  </div>
+  
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- Posts -->
+
+    <article class="post post--first">
+      <p class="post--first__header">April 4, 2020 / by Amy / 0 Comments</p>
+      <h2 class="post--first__title">Featured blog post</h2>
+      <p class="post--first__paragraph">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et.
+      </p>
+      <a class="post--first__btn" href="#">READ MORE</a>
+    </article>
+
+    <article class="post post--second">
+      <p class="post__header">March 3, 2020 / by Marc / 8 Comments</p>
+      <h2 class="post__title">Sample blog post</h2>
+      <p class="post__paragraph">
+        At vero eos et accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+      </p>
+      <a class="post__btn" href="#">READ MORE</a>
+    </article>
+
+    <article class="post post--third">
+      <img class="post__img" src="assets/blog-post-with-image.jpg" alt="beach">
+      <p class="post__header">Febrary 2, 2020 / by Jacob / 14 Comments</p>
+      <h2 class="post__title">Blog post with image</h2>
+      <p class="post__paragraph">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et.
+      </p>
+      <a class="post__btn" href="#">READ MORE</a>
+    </article>
+
+    <article class="post post--fourth">
+      <p class="post__header">January 1, 2020 / by Chris / 7 Comments</p>
+      <h2 class="post__title">Another blog post</h2>
+      <p class="post__paragraph">
+        At vero eos et accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+      </p>
+      <a class="post__btn" href="#">READ MORE</a>
+    </article>
+
+
+    <!-- Categories -->
+
+    <div class="category-box category-box--business">
+      <img class="category-box__img" src="assets/business.jpg" alt="business">
+      <div>
+        <h3 class="category-box__title">Business</h3>
+        <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+      </div>
+    </div>
+
+    <div class="category-box category-box--culture">
+      <img class="category-box__img" src="assets/culture.jpg" alt="culture">
+      <div>
+        <h3 class="category-box__title">Culture</h3>
+        <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+      </div>
+    </div>
+
+
+    <!-- Sidebars -->
+
+    <!--latest news-->
+    <nav class="sidebar sidebar--latest-news">
+      <h2 class="sidebar__header">Latest news</h2>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/design.jpg" alt="design"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">Design</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/health.jpg" alt="health"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">Health</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/politics.jpg" alt="politics"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">Politics</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <a class="sidebar__btn" href="#">View all news</a>
+    </nav>
+    <!--end of latest news-->
+
+    <!--recommended news-->
+    <nav class="sidebar sidebar--recommended-news">
+      <h2 class="sidebar__header">Recommended news</h2>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/science.jpg" alt="science"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">Science</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/travel.jpg" alt="travel"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">Travel</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <div class="category-box">
+        <a href="#"><img class="category-box__img" src="assets/world.jpg" alt="world"></a>
+        <div>
+          <a href="#"><h3 class="category-box__title">World</h3></a>
+          <p class="category-box__paragraph">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+        </div>
+      </div>
+
+      <a class="sidebar__btn" href="#">View all news</a>
+    </nav>
+    <!--end of recommended news-->
+
+  </main>
 </body>
 </html>
