@@ -62,7 +62,7 @@
 
 /**
 * 1) Font color of page header and sidebar headers.
-* 2) Font color of category headings. (Set in components.css)
+* 2) Font color of category headings.
 */
 
 :root {
@@ -73,6 +73,14 @@
   --sidebar-footer-font-color: #B2ACBA;
 }
 
-html {
-  font: normal normal normal initial/initial 'Montserrat', sans-serif;
+
+
+
+
+/*------------------------------------*\
+  #FONT-FAMILY
+\*------------------------------------*/
+
+:root {
+  --font-family: Montserrat
 }

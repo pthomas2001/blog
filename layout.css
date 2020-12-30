@@ -28,9 +28,16 @@
 }
 
 
+
+
+
 /*------------------------------------*\
   #HEADER
 \*------------------------------------*/
+
+/**
+ * Extend `.header {}` in components.css.
+ */
 
 .header {
   width:  100%;
@@ -38,9 +45,16 @@
 }
 
 
+
+
+
 /*------------------------------------*\
   #NAVBAR
 \*------------------------------------*/
+
+/**
+ * Extend `.navbar {}` in components.css.
+ */
 
 .navbar-container {
   width:  100%;
@@ -56,9 +70,16 @@
   }
 
 
+
+
+
 /*------------------------------------*\
   #GRID CONTAINER
 \*------------------------------------*/
+
+/**
+ * Extend `.main {}` in components.css.
+ */
 
 .main {
   display:  grid;
@@ -96,9 +117,16 @@
 .post--fourth { grid-area: fourth-post }
 
 
+
+
+
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
+
+/**
+ * Extend `.footer {}` in components.css.
+ */
 
 .footer {
   width:  100%;
