@@ -1,0 +1,106 @@
+/**
+* This file contains:
+*
+* BODY..................Sets the width and height of the body container.
+*
+* HEADER................Sets the width and height of the header.
+*
+* NAVBAR................Sets the width, height and flex layout of the navbar.
+*
+* MAIN (GRID)...........Sets the width, paddings and grid of the main container.
+* Grid container
+* Grid elements
+*
+* FOOTER................
+*/
+
+
+
+
+
+/*------------------------------------*\
+  #BODY
+\*------------------------------------*/
+
+.body {
+  width:  1600px;
+  height: 2340px;
+}
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header {
+  width:  100%;
+  height: 80px
+}
+
+
+/*------------------------------------*\
+  #NAVBAR
+\*------------------------------------*/
+
+.navbar-container {
+  width:  100%;
+  height: 80px
+}
+
+  .navbar {
+    display:          flex;
+    justify-content:  space-between;
+    width:            1031px;
+    height:           15px;
+    margin:           33px 284.5px 32px;
+  }
+
+
+/*------------------------------------*\
+  #GRID CONTAINER
+\*------------------------------------*/
+
+.main {
+  display:  grid;
+  grid-template:
+    "";
+  width:    100%;
+  padding:  10px 215px
+}
+
+
+/*------------------------------------*\
+  #GRID ELEMENTS
+\*------------------------------------*/
+
+.post--first { grid-area: first-post; }
+
+.sidebar--latest-news { grid-area: latest-news; }
+
+
+.category-box--business { grid-area: business-category }
+
+.category-box--culture { grid-area: culture-category }
+
+
+.post--second { grid-area: second-post }
+
+.sidebar--recommended-news { grid-area: recommended-news }
+
+
+.post--third { grid-area: third-post }
+
+.sidebar--categories { grid-area: categories }
+
+
+.post--fourth { grid-area: fourth-post }
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  width:  100%;
+  height: 100px
+}
