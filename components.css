@@ -48,16 +48,124 @@
     }
 
   .logo {
-    display:  inline-block;
-    color:    var(--primary-font-color);
+    display:        inline-block;
+    color:          var(--primary-font-color);
   }
 
     .logo__icon {
-      display:    inline-block;
-      font-size:  40px;
-      margin:     15px 10px 15px 0
+      display:          inline-block;
+      font-size:        25px;
+      margin:           15px 10px 15px 0
     }
 
     .logo__text {
-      display: inline-block
+      display:          inline-block;
+      font-size:        18px;
+      font-weight:      bold
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #SIDEBAR
+\*------------------------------------*/
+
+/**
+ * These rules extend `.navbar-container {}` in components.css.
+ */
+
+.navbar-container {
+  background:   var(--secondary-color);
+  font-family:  var(--font-family)
+}
+
+    .navbar__item {
+      color:            var(--paragraph-color);
+      font-size:        12px;
+      font-weight:      bold;
+      text-decoration:  none;
+      letter-spacing:   2.4px;
+      line-height:      1.5;
+      padding:          33px 0 32px
+    }
+
+    .navbar__item--active {
+      color:            var(--secondary-font-color);
+      padding-bottom:   28px;
+      border-bottom:    4px solid
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+/**
+ * These rules extend `.main {}` in components.css.
+ */
+
+.main {
+  background:   var(--main-container-background);
+  font-family:  var(--font-family)
+}
+
+  .post {
+    background:     var(--secondary-color);
+    border-radius:  15px;
+    padding:        60px;
+    padding-bottom: 50px;
+    width:          730px;
+    height:         350px
+  }
+
+    .post__header {
+      color:            var(--post-header-font-color);
+      font-size:        12px;
+      font-weight:      bold;
+      text-transform:   uppercase;
+      line-height:      1.5;
+      letter-spacing:   2.4px
+    }
+
+    .post__title {
+      color:            var(--paragraph-color);
+      font-size:        40px;
+      font-weight:      700;
+      padding:          15px 0
+    }
+
+    .post__paragraph {
+      color:            var(--paragraph-color);
+      font-size:        20px;
+      line-height:      1.5;
+      width:            610px;
+      height:           90px;
+      overflow:         hidden;
+    }
+
+    .post__btn {
+      display:          inline-block;
+      font-size:        12px;
+      color:            var(--secondary-font-color);
+      letter-spacing:   2.4px;
+      text-decoration:  none;
+      font-weight:      bold;
+      border:           2px solid;
+      border-radius:    24px;
+      padding:          13px 20px 12px 20px;
+      margin-top:       15px
+    }
+
+  .post--first {
+    background: transparent url(assets/featured-blog-post.jpg) 0% 0% no-repeat padding-box
+  }
+
+    .post__header--white, .post__title--white,
+    .post__paragraph--white, .post__btn--white {
+      color: white
     }

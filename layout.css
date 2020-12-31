@@ -24,7 +24,7 @@
 
 .body {
   width:  1600px;
-  height: 2340px;
+  /* height: 2340px; */
 }
 
 
@@ -39,10 +39,7 @@
  * Extend `.header {}` in components.css.
  */
 
-.header {
-  width:  100%;
-  height: 80px
-}
+.header { width: 100% }
 
 
 
@@ -65,8 +62,7 @@
     display:          flex;
     justify-content:  space-between;
     width:            1031px;
-    height:           15px;
-    margin:           33px 284.5px 32px;
+    margin:           0 284.5px;
   }
 
 
@@ -81,13 +77,13 @@
  * Extend `.main {}` in components.css.
  */
 
-.main {
+/* .main {
   display:  grid;
   grid-template:
     "";
   width:    100%;
   padding:  10px 215px
-}
+} */
 
 
 /*------------------------------------*\
