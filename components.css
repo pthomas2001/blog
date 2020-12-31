@@ -162,7 +162,8 @@
     }
 
   .post--first {
-    background: transparent url(assets/featured-blog-post.jpg) 0% 0% no-repeat padding-box
+    background: transparent url(assets/featured-blog-post.jpg) 0% 0% no-repeat padding-box;
+    background-size: cover
   }
 
     .post__header--white, .post__title--white,
