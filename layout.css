@@ -90,7 +90,7 @@
   #GRID ELEMENTS
 \*------------------------------------*/
 
-.post--first { grid-area: first-post; }
+/* .post--first { grid-area: first-post; }
 
 .sidebar--latest-news { grid-area: latest-news; }
 

@@ -114,13 +114,14 @@
   font-family:  var(--font-family)
 }
 
+
   .post {
-    background:     var(--secondary-color);
-    border-radius:  15px;
-    padding:        60px;
-    padding-bottom: 50px;
-    width:          730px;
-    height:         350px
+    background:       var(--secondary-color);
+    border-radius:    15px;
+    padding:          60px;
+    padding-bottom:   50px;
+    width:            730px;
+    
   }
 
     .post__header {
@@ -162,11 +163,69 @@
     }
 
   .post--first {
-    background: transparent url(assets/featured-blog-post.jpg) 0% 0% no-repeat padding-box;
-    background-size: cover
+    background:       transparent url(assets/featured-blog-post.jpg) 0% 0% no-repeat padding-box;
+    background-size:  cover
   }
 
     .post__header--white, .post__title--white,
     .post__paragraph--white, .post__btn--white {
-      color: white
+      color:          white
     }
+
+  .post--third { height: 670px }
+
+    .post__img-container {
+      position:         relative;
+      right:            60px;
+      bottom:           60px;
+      height:           320px;
+      width:            730px;
+      overflow:         hidden
+    }
+
+      .post__img {
+        border-radius:    15px;
+        width:            730px;
+        height:           335px
+    }
+
+
+  .category-box {
+    background:       var(--secondary-color);
+    border-radius:    15px;
+    padding:          20px;
+    width:            350px
+  }
+
+    .category-box__img-container {
+      display:          inline-block;
+      padding-right:    20px
+    }
+
+      .category-box__img {
+        border-radius:      10px;
+        width:              120px;
+        height:             120px;
+      }
+
+    .category-box__text-container { display: inline-block }
+
+      .category-box__title {
+        display:            inline-block;
+        font-size:          12px;
+        font-weight:        bold;
+        color:              var(--secondary-font-color);
+        text-decoration:    none;
+        text-transform:     uppercase;
+        letter-spacing:     2.4px;
+        margin-bottom:      15px
+      }
+
+      .category-box__paragraph {
+        font-size:          14px;
+        color:              var(--paragraph-color);
+        line-height:        1.5;
+        height:             60px;
+        width:              170px;
+        overflow:           hidden
+      }
