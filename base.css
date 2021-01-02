@@ -50,6 +50,7 @@
   --primary-color:             #6200EA 0% 0% no-repeat padding-box; /* [1] */
   --secondary-color:           #FFFFFF 0% 0% no-repeat padding-box; /* [2] */
   --main-container-background: #F4F3F5 0% 0% no-repeat padding-box;
+  --footer-color:              #211138 0% 0% no-repeat padding-box;
 }
 
 
@@ -71,6 +72,7 @@
   --paragraph-color:           #211138;
   --post-header-font-color:    #B2ACBA;
   --sidebar-footer-font-color: #B2ACBA;
+  --footer-font-color:         #B2ACBA;
 }
 
 

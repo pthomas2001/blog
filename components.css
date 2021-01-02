@@ -20,7 +20,7 @@
 */
 
 /**
- * These rules extend `.header {}` in components.css.
+ * These rules extend `.header {}` in layout.css.
  */
 
 .header {
@@ -69,11 +69,11 @@
 
 
 /*------------------------------------*\
-  #SIDEBAR
+  #NAVBAR
 \*------------------------------------*/
 
 /**
- * These rules extend `.navbar-container {}` in components.css.
+ * These rules extend `.navbar-container {}` in layout.css.
  */
 
 .navbar-container {
@@ -106,7 +106,7 @@
 \*------------------------------------*/
 
 /**
- * These rules extend `.main {}` in components.css.
+ * These rules extend `.main {}` in layout.css.
  */
 
 .main {
@@ -187,45 +187,114 @@
         border-radius:    15px;
         width:            730px;
         height:           335px
-    }
+      }
 
 
   .category-box {
+    display:          flex;
+    justify-content:  space-evenly;
     background:       var(--secondary-color);
     border-radius:    15px;
-    padding:          20px;
+    padding:          20px 0;
+    width:            350px
+  }
+    
+    .category-box__img {
+      border-radius:    10px;
+      width:            120px;
+      height:           120px;
+    }
+
+    .category-box__title {
+      display:          inline-block;
+      font-size:        12px;
+      font-weight:      bold;
+      color:            var(--secondary-font-color);
+      text-decoration:  none;
+      text-transform:   uppercase;
+      letter-spacing:   2.4px;
+      margin-bottom:    15px
+      }
+
+    .category-box__paragraph {
+      font-size:        14px;
+      color:            var(--paragraph-color);
+      line-height:      1.5;
+      height:           60px;
+      width:            170px;
+      overflow:         hidden
+    }
+
+
+  .sidebar {
+    background:       var(--secondary-color);
+    border-radius:    15px;
     width:            350px
   }
 
-    .category-box__img-container {
-      display:          inline-block;
-      padding-right:    20px
+    .sidebar__header {
+      color:            var(--primary-font-color);
+      font-size:        12px;
+      text-transform:   uppercase;
+      font-weight:      bold;
+      letter-spacing:   2.4px;
+      text-align:       center;
+      background:       var(--primary-color);
+      border-radius:    15px 15px 0px 0px;
+      padding:          23px 0 22px
     }
 
-      .category-box__img {
-        border-radius:      10px;
-        width:              120px;
-        height:             120px;
-      }
+    .sidebar__link {
+      display:          block;
+      font-size:        12px;
+      font-weight:      bold;
+      color:            var(--paragraph-color);
+      text-decoration:  none;
+      text-transform:   uppercase;
+      letter-spacing:   2.4px;
+      padding:          17px 30px 18px;
+      border-bottom:    .1px solid #F5F4F6
+    }
 
-    .category-box__text-container { display: inline-block }
+    .sidebar__btn {
+      display:          block;
+      font-size:        12px;
+      font-weight:      bold;
+      color:            var(--sidebar-footer-font-color);
+      text-decoration:  none;
+      text-transform:   uppercase;
+      letter-spacing:   2.4px;
+      text-align:       center;
+      padding:          22px 0 23px;
+      border-top:       .1px solid #F5F4F6
+    }
 
-      .category-box__title {
-        display:            inline-block;
-        font-size:          12px;
-        font-weight:        bold;
-        color:              var(--secondary-font-color);
-        text-decoration:    none;
-        text-transform:     uppercase;
-        letter-spacing:     2.4px;
-        margin-bottom:      15px
-      }
 
-      .category-box__paragraph {
-        font-size:          14px;
-        color:              var(--paragraph-color);
-        line-height:        1.5;
-        height:             60px;
-        width:              170px;
-        overflow:           hidden
-      }
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+/**
+ * These rules extend `.footer {}` in layout.css.
+ */
+
+.footer {
+  font-family:  var(--font-family);
+  background:   var(--footer-color)
+}
+
+  .footer__paragraph {
+    font-size:        12px;
+    font-weight:      bold;
+    color:            var(--footer-font-color);
+    text-decoration:  none;
+    text-transform:   uppercase;
+    letter-spacing:   2.4px;
+    text-align:       center;
+    padding:          43px 0 42px
+  }
+
+  .footer__span { color: var(--secondary-font-color) }
