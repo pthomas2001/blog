@@ -3,15 +3,11 @@
 *
 * BODY..................Sets the width and height of the body container.
 *
-* HEADER................Sets the width and height of the header.
-*
 * NAVBAR................Sets the width, height and flex layout of the navbar.
 *
 * MAIN (GRID)...........Sets the width, paddings and grid of the main container.
 * Grid container
 * Grid elements
-*
-* FOOTER................
 */
 
 
@@ -22,24 +18,7 @@
   #BODY
 \*------------------------------------*/
 
-.body {
-  width:  1600px;
-  /* height: 2340px; */
-}
-
-
-
-
-
-/*------------------------------------*\
-  #HEADER
-\*------------------------------------*/
-
-/**
- * Extend `.header {}` in components.css.
- */
-
-.header { width: 100% }
+.body { width: 1600px; }
 
 
 
@@ -70,60 +49,18 @@
 
 
 /*------------------------------------*\
-  #GRID CONTAINER
+  #MAIN
 \*------------------------------------*/
 
 /**
  * Extend `.main {}` in components.css.
  */
 
-/* .main {
-  display:  grid;
-  grid-template:
-    "";
-  width:    100%;
-  padding:  10px 215px
-} */
-
-
-/*------------------------------------*\
-  #GRID ELEMENTS
-\*------------------------------------*/
-
-/* .post--first { grid-area: first-post; }
-
-.sidebar--latest-news { grid-area: latest-news; }
-
-
-.category-box--business { grid-area: business-category }
-
-.category-box--culture { grid-area: culture-category }
-
-
-.post--second { grid-area: second-post }
-
-.sidebar--recommended-news { grid-area: recommended-news }
-
-
-.post--third { grid-area: third-post }
-
-.sidebar--categories { grid-area: categories }
-
-
-.post--fourth { grid-area: fourth-post }
-
-
-
-
-
-/*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-/**
- * Extend `.footer {}` in components.css.
- */
-
-.footer {
-  /* width:  100%; */
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 245px;
+  height:  2080px;
 }

@@ -53,20 +53,57 @@
   <!-- MAIN -->
   <main class="main">
 
-    <!-- Posts -->
-
-    <article class="post post--first">
-      <p class="post__header post__header--white">April 4, 2020 / by Amy / 0 Comments</p>
-      <h2 class="post__title post__title--white">Featured blog post</h2>
-      <p class="post__paragraph post__paragraph--white">
+    <!-- First post -->
+    <article class="post post--white-letters">
+      <p class="post__header post__header--white-letters">April 4, 2020 / by Amy / 0 Comments</p>
+      <h2 class="post__title post__title--white-letters">Featured blog post</h2>
+      <p class="post__paragraph post__paragraph--white-letters">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
         sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
         sed diam voluptua. At vero eos et.
       </p>
-      <a class="post__btn post__btn--white" href="#">READ MORE</a>
+      <a class="post__btn post__btn--white-letters" href="#">READ MORE</a>
     </article>
 
-    <article class="post post--second">
+    <!-- Categories -->
+    <div>
+
+      <div class="category-container category-container--first">
+        <div class="category-box">
+          <div>
+            <a href="#">
+              <img class="category-box__img" src="assets/business.jpg" alt="business">
+            </a>
+          </div>
+          <div>
+            <a class="category-box__title" href="#"><h3>Business</h3></a>
+            <p class="category-box__paragraph">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="category-container">
+        <div class="category-box">
+          <div>
+            <a href="#">
+              <img class="category-box__img" src="assets/culture.jpg" alt="culture">
+            </a>
+          </div>
+          <div>
+            <a class="category-box__title" href="#"><h3>Culture</h3></a>
+            <p class="category-box__paragraph">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- More posts -->
+    <article class="post">
       <p class="post__header">March 3, 2020 / by Marc / 8 Comments</p>
       <h2 class="post__title">Sample blog post</h2>
       <p class="post__paragraph">
@@ -77,7 +114,7 @@
       <a class="post__btn" href="#">READ MORE</a>
     </article>
 
-    <article class="post post--third">
+    <article class="post post--with-image">
       <div class="post__img-container">
         <img class="post__img" src="assets/blog-post-with-image.jpg" alt="beach">
       </div>
@@ -91,7 +128,7 @@
       <a class="post__btn" href="#">READ MORE</a>
     </article>
 
-    <article class="post post--fourth">
+    <article class="post">
       <p class="post__header">January 1, 2020 / by Chris / 7 Comments</p>
       <h2 class="post__title">Another blog post</h2>
       <p class="post__paragraph">
@@ -102,42 +139,10 @@
       <a class="post__btn" href="#">READ MORE</a>
     </article>
 
-
-    <!-- Categories -->
-
-    <div class="category-box category-box--business">
-      <div>
-        <a href="#">
-          <img class="category-box__img" src="assets/business.jpg" alt="business">
-        </a>
-      </div>
-      <div>
-        <a class="category-box__title" href="#"><h3>Business</h3></a>
-        <p class="category-box__paragraph">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        </p>
-      </div>
-    </div>
-
-    <div class="category-box category-box--culture">
-      <div>
-        <a href="#">
-          <img class="category-box__img" src="assets/culture.jpg" alt="culture">
-        </a>
-      </div>
-      <div>
-        <a class="category-box__title" href="#"><h3>Culture</h3></a>
-        <p class="category-box__paragraph">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        </p>
-      </div>
-    </div>
-
-
     <!-- Sidebars -->
 
     <!--latest news-->
-    <nav class="sidebar sidebar--latest-news">
+    <nav class="sidebar">
       <h2 class="sidebar__header">Latest news</h2>
 
       <div class="category-box">
@@ -187,7 +192,7 @@
     <!--end of latest news-->
 
     <!--recommended news-->
-    <nav class="sidebar sidebar--recommended-news">
+    <nav class="sidebar">
       <h2 class="sidebar__header">Recommended news</h2>
 
       <div class="category-box">
@@ -237,7 +242,7 @@
     <!--end of recommended news-->
 
     <!--categories (sidebar)-->
-    <nav class="sidebar sidebar--categories">
+    <nav class="sidebar">
       <h2 class="sidebar__header">Categories</h2>
       <a class="sidebar__link" href="#">Business</a>
       <a class="sidebar__link" href="#">Culture</a>
