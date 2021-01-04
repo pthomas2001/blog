@@ -40,7 +40,7 @@
       letter-spacing:   2.4px;
       width:            160px;
       padding:          12.5px 14px;
-      margin:           20px 305px 20px 245px
+      margin:           0 305px 20px 245px
     }
 
   .logo {
@@ -51,13 +51,7 @@
     .logo__icon {
       display:          inline-block;
       font-size:        25px;
-      margin:           15px 10px 15px 0
-    }
-
-    .logo__text {
-      display:          inline-block;
-      font-size:        18px;
-      font-weight:      bold
+      margin-top:       15px
     }
 
 
